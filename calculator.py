@@ -1,54 +1,54 @@
 import streamlit as st
 
-st.set_page_config(page_title="Prisonade Calculator")
+st.set_page_config(page_title="Skylinemines Calculator")
 st.subheader("Which Realm:")
-dim = st.radio("",('River', 'Ranch', 'Port','Empire','Citadel'))
+dim = st.radio("",('Hills', 'Desert', 'Mountains','Volcano','Seashore'))
 st.subheader("Which Block")
-if dim=="River":
+if dim=="Hills":
      block = st.radio(
           "",
-          ('Stone-Iron Mix', 'Iron-Diamond Mix', 'Diamond-Emerald Mix','River Mix'))
+          ('Moss-Coal Mix', 'Coal-Copper Mix', 'Copper-Mosaic Mix','Hills Mix'))
      val=int(st.text_input('How Many Blocks?', 0))
-     if block=='Stone-Iron Mix':
+     if block=='Moss-Iron Mix':
           a = int(val / 64)
           b = val % 64
           if ((b % 64)==0):
-               st.header(f"You need {a:,d} Stacks of T3 Stone and Iron")
+               st.header(f"You need {a:,d} Stacks of T3 Moss and Coal")
           else:
-               st.header(f"You need {a:,d} stacks and {b} blocks of T3 Stone and Iron ")
-     elif block=="Iron-Diamond Mix":
+               st.header(f"You need {a:,d} stacks and {b} blocks of T3 Moss and Coal ")
+     elif block=="Coal-Copper Mix":
           a=val*4
           b=int(a/64)
           c=a%64
           if ((c % 64)==0):
-               st.header(f"You need {b:,d} Stacks of T3 Iron and Diamond")
+               st.header(f"You need {b:,d} Stacks of T3 Coal and Copper")
           else:
-               st.header(f"You need {b:,d} stacks and {c} blocks of T3 Iron and Diamond ")
-     elif block=="Diamond-Emerald Mix":
+               st.header(f"You need {b:,d} stacks and {c} blocks of T3 Coal and Copper ")
+     elif block=="Copper-Mosaic Mix":
           a=val*8
           b=int(a/64)
           c=a%64
           if ((c % 64)==0):
-               st.header(f"You need {b:,d} Stacks of T3 Diamond and Emerald")
+               st.header(f"You need {b:,d} Stacks of T3 Copper and Mosaic")
           else:
-               st.header(f"You need {b:,d} stacks and {c} blocks of T3 Diamond and Emerald ")
+               st.header(f"You need {b:,d} stacks and {c} blocks of T3 Copper and Mosaic ")
      else:
           dia=val*36
           eme=val*24
           iron=val*12
           if ((iron % 64)==0):
-               st.header(f"You need {int(iron / 64):,d} Stacks of T3 Iron")
+               st.header(f"You need {int(iron / 64):,d} Stacks of T3 Coal")
           else:
-               st.header(f"You need {int(iron / 64):,d} Stacks and {iron % 64} T3 Iron")
+               st.header(f"You need {int(iron / 64):,d} Stacks and {iron % 64} T3 Coal")
           if ((dia % 64)==0):
-               st.header(f"You need {int(dia / 64):,d} Stacks of T3 Diamond")
+               st.header(f"You need {int(dia / 64):,d} Stacks of T3 Copper")
           else:
-               st.header(f"You need {int(dia/64):,d} Stacks and {dia%64} T3 Diamond")
+               st.header(f"You need {int(dia/64):,d} Stacks and {dia%64} T3 Copper")
           if ((eme % 64)==0):
-               st.header(f"You need {int(eme / 64):,d} Stacks of T3 Emerald")
+               st.header(f"You need {int(eme / 64):,d} Stacks of T3 Mosaic")
           else:
-               st.header(f"You need {int(eme / 64):,d} Stacks and {eme % 64} T3 Emerald")
-elif dim=="Ranch":
+               st.header(f"You need {int(eme / 64):,d} Stacks and {eme % 64} T3 Mosaic")
+elif dim=="Desert":
      block = st.radio(
           "",
           ('Granite-Coal Mix','Coal-Copper Mix','Copper-Redstone Mix','Ranch Mix'))
@@ -96,7 +96,7 @@ elif dim=="Ranch":
                st.header(f"You need {int(pri/64):,d} Stacks of T3 Redstone")
           else:
                st.header(f"You need {int(pri / 64):,d} Stacks and {pri % 64} T3 Redstone")
-elif dim=="Port":
+elif dim=="Mountains":
      block = st.radio(
           "",
           ('Sandstone-Prismarine Mix','Prismarine-Oceanstone Mix','Oceanstone-Seashine Mix','Port Mix'))
@@ -144,7 +144,7 @@ elif dim=="Port":
                st.header(f"You need {int(hr/64):,d} Stacks of T3 Seashine")
           else:
                st.header(f"You need {int(hr / 64):,d} Stacks and {hr % 64} T3 Seashine ")
-elif dim=="Empire":
+elif dim=="Volcano":
      block = st.radio(
           "",
           ('Moss stone-Star Rock Mix','Star Rock-Aztec Relic Mix','Aztec Relic-Amethyst Mix','Empire Mix'))
@@ -192,7 +192,7 @@ elif dim=="Empire":
                st.header(f"You need {int(hr/64):,d} Stacks of T3 Amethyst")
           else:
                st.header(f"You need {int(hr / 64):,d} Stacks and {hr % 64} T3 Amethyst ")
-elif dim=="Citadel":
+elif dim=="Seashore":
      block = st.radio(
           "",
           ('Marble-Purpur Mix','Purpur-Magma Mix','Magma-Obsidian Mix','Citadel Mix'))
