@@ -197,7 +197,7 @@ elif dim=="Seashore":
           "",
           ('Coral Quartz-Krakenite Mix','Krakenite-Dolphin Stone Mix','Dolphin Stone-Atlantisite Mix','Seashore Mix'))
      val = int(st.text_input('How Many Blocks?', 0))
-     if block == 'Coral Quartz-Purpur Mix':
+     if block == 'Coral Quartz-Krakenite Mix':
           a=val*6
           b = int(a / 64)
           c = a % 64
