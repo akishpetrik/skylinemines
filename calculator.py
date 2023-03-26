@@ -216,7 +216,7 @@ elif dim=="Seashore":
                st.header(f"You need {int(hr/64):,d} Stacks of T3 Dolphin Stone")
           else:
                st.header(f"You need {int(hr / 64):,d} Stacks and {hr % 64} T3 Dolphin Stone")
-     elif block == "Dolphin Stone-Obsidian Mix":
+     elif block == "Dolphin Stone-Atlantisite Mix":
           fg=val*15
           hr=val*8
           if ((fg % 64)==0):
