@@ -61,7 +61,7 @@ elif dim=="Desert":
                st.header(f"You need {b:,d} Stacks of T3 Andesite and Granite")
           else:
                st.header(f"You need {b:,d} stacks and {c} blocks of T3 Andesite and Granite ")
-     elif block == "Granite-Copper Mix":
+     elif block == "Granite-Iron Mix":
           pri = val * 6
           fd=val*5
           if ((pri % 64)==0):
