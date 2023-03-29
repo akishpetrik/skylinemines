@@ -162,9 +162,9 @@ elif dim=="Volcano":
           b = int(a / 64)
           c = a % 64
           if ((c % 64)==0):
-               st.header(f"You need {b:,d} Stacks of T3 Elven Shard and Amethyst")
+               st.header(f"You need {b:,d} Stacks of T3 Elven Shard and Draconic Shard")
           else:
-               st.header(f"You need {b:,d} stacks and {c} blocks of T3 Aztec Relic and Amethyst ")
+               st.header(f"You need {b:,d} stacks and {c} blocks of T3 Elven Shard and Draconic Shard ")
      elif block == "Nylium-Elven Shard Mix":
           fg=val*8
           hr=val*7
